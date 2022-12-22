@@ -10,3 +10,7 @@ print(input('var_c='))
 
 str_1="This is my first string of numbers"
 print(str_1)
+
+accaunt=input('Введите логин: ')
+password=input('Введите пароль: ')
+print(f'Данные для входа: {accaunt}, {password}')
