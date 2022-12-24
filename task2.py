@@ -1,4 +1,2 @@
-import time
-n = int(input('Введите количество секунд: '))
-time_format = time.strftime("%H:%M:%S", time.gmtime(n))
-print("Time in transform format :-", time_format)
+t_sec = int(input('Введите время в секундах: ')
+print(f'Время чч:мм:сс - {t_sec / 3600:.2f} : {t_sec / 60:.2f} : {t_sec}')
