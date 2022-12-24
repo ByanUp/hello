@@ -2,15 +2,10 @@
 #Для решения используйте цикл while и арифметические операции.
 
 a = int(input('Введите целое положительное число: '))
-b = []
-while a > 0:
-    b.append(a % 10)
+max_number = 0
+while a != 0:
+    b = a % 10
+    if max_number < b:
+        max_number = b
     a = a // 10
-b = b[::-1]
-print(b)
-max_number = max(b)
-print('Наибольшее число: ', max_number)
-
-
-
-
+print(f'Максимальная цифра в введенном числе a: {max_number}')
