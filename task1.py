@@ -3,7 +3,5 @@
 явно, в программе.'''
 
 res_list = [1, 5, 0.2, None, 'a', 'big']
-print(type(res_list))
-for i in range(len(res_list)):
-    print(f'Тип элемента в списке: {type(res_list[i])}')
-
+for el in res_list:
+print(type(el))
