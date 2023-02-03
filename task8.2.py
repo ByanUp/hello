@@ -3,9 +3,9 @@
 завершиться с ошибкой. """
 
 
-class New_Exc(Exception):
+class New_Exception(Exception):
 
-    def sep_func(self, a, b):
+    def separate_func(self, a, b):
         try:
             res = round(a / b, 2)
         except ZeroDivisionError:
@@ -14,9 +14,9 @@ class New_Exc(Exception):
             print(f"Все хорошо, результат: {a} / {b} = {res} \n")
 
 
-n_e = New_Exc()
+n_e = New_Exception()
 
-n_e.sep_func(10, 5)
-n_e.sep_func(5, 0)
-n_e.sep_func(10, 2)
-n_e.sep_func(0, 0)
+n_e.separate_func(10, 5)
+n_e.separate_func(5, 0)
+n_e.separate_func(10, 2)
+n_e.separate_func(0, 0)
